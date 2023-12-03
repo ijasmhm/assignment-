@@ -46,7 +46,7 @@ function center() {
     
 }
 
-function fontColor() {
+/*function fontColor() {
     document.querySelectorAll('.font-color').forEach(function(element){
         element.addEventListener('click',function(){
             console.log("font-color")
@@ -58,7 +58,20 @@ function fontColor() {
         })
     })
 
+}*/
+
+
+function changeTextColor(color) {
+    document.execCommand('foreColor', false, color);
 }
+
+
+
+
+
+
+
+
 
 
 function executeCommand(command) {
