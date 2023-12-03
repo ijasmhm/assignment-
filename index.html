@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Text Editor - [CT/2019/026]</title>
 </head>
 
@@ -18,43 +19,43 @@
     <div>
         <div class="toolbar bg-dark">
             
-            <button class="bold">
+            <button class="bold" onclick="bold()">
                     <img src="Resources\bold-xxl.png" width="30">
             </button>
 
-            <button class="underline">
+            <button class="underline" onclick="underline()">
                     <img src="Resources\format_underline_white_192x192.png" width="30">
             </button>
 
-            <button class="italic">
+            <button class="italic" onclick="italic()">
                     <img src="Resources\italic-xxl.png" width="30">
             </button>
 
-            <button class="font-color">
-                    <img src="color.png" width="30">
+            <button class="font-color" onclick="fontColor()">
+                    <img src="Resources\color.png" width="30">
             </button>
 
-            <button class="left">
+            <button class="left" onclick="left()">
                     <img src="Resources\left.png" width="30">
             </button>
 
-            <button class="right">
+            <button class="right" onclick="right()">
                     <img src="Resources\right.png" width="30">
             </button>
 
-            <button class="justify">
+            <button class="justify" onclick="justify()">
                 <img src="Resources\justify.png" width="30">
             </button>
 
-            <button class="center">
+            <button class="center" onclick="center()">
                     <img src="Resources\center.png" width="30">
             </button>
 
-            <button class="undo">
+            <button class="undo" onclick="undo()">
                     <img src="Resources\undo-4-32.png" width="30">
             </button>
 
-            <button class="redo">
+            <button class="redo" onclick="redo()">
                     <img src="Resources\action-redo-32.png" width="30">
             </button>
 
@@ -64,12 +65,15 @@
             
         </div>
     </div>
+
+    <div id="editor" contenteditable="true"></div>
     
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="my.js"></script>
 </body>
 <!-- Author: [M.H.M.IJAS] | [CT/2019/026] -->
 </html>

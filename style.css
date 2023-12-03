@@ -2,6 +2,11 @@ button {
     height: 50px;
     border: none;
     background: none;
+    outline: none;
+}
+
+button:focus-visible{
+    border: none;
 }
 
 .toolbar {
@@ -10,4 +15,13 @@ button {
     justify-content: center;
     gap: 20px;
 
+}
+
+#editor {
+    max-width: 800px;
+    margin: 20px auto;
+    height: 200px;
+    border: 1px solid saddlebrown;
+    padding: 10px;
+    
 }
